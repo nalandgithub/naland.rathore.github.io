@@ -1,0 +1,58 @@
+<h2>Dashboard Works!</h2>
+
+<div>
+    <table>
+        <thead>
+            
+            <!-- <th>No.<option *ngFor="let option of no">{{option}}</option></th> -->
+          <th>Name</th>
+          <th>Email</th>
+          <th>Address</th>
+          <th>City</th>
+
+            
+            <!-- <th>Name<option *ngFor="let option of name">{{option}}</option></th>
+            <th>Email<option *ngFor="let option of email">{{option}}</option></th>
+            <th>Address<option *ngFor="let option of address">{{option}}</option></th>
+            <th>City<option *ngFor="let option of city">{{option}}</option></th> -->
+          </thead>
+          
+        <tbody>
+
+            <tr  *ngFor="let data of listOfObjects">
+                <td>{{data.name}}</td>
+                <td>{{data.email}}</td>
+                <td>{{data.address}}</td>
+                <td>{{data.city}}</td>
+            </tr>
+           <!-- <tr>
+                <td>1</td>
+                <td>Harsh</td>
+                <td>harsh@gmail.com</td>
+                <td>Shyamal</td>
+                <td>Ahemdabad</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Ram</td>
+                <td>ram@gmail.com</td>
+                <td>Redio Road</td>
+                <td>Ahemdabad</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Akash</td>
+                <td>akash@gmail.com</td>
+                <td>Indore</td>
+                <td>Indore</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Shyam</td>
+                <td>shyam@gmail.com</td>
+                <td>Rajkot</td>
+                <td>Rajkot</td>
+            </tr>-->
+        </tbody>
+    </table>
+</div>

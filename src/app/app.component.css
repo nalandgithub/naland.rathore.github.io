@@ -1,0 +1,12 @@
+/*nav button {
+    padding: 1rem;
+    font-size: inherit;
+   
+  }*/ 
+
+      nav button {
+        font-size: 100%;
+      }
+      span {
+        font-size: 1.6rem;
+      }
