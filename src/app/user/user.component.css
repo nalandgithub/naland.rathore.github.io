@@ -3,10 +3,21 @@ label {
     padding-bottom: .5rem;
     padding-top: 1rem;
     display: inline-block;
+    text-align: left;
   }
   
   button {
     max-width: 300px;
   }
   
-  
+  div {
+    text-align: center;
+  }
+  body {
+    background-color: green;
+  }
+
+  .outer {
+    height: 100vh;
+    background-color: rgb(69, 104, 135);
+  }

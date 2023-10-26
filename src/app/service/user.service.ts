@@ -13,7 +13,7 @@ export class UserService {
     name:'adsasdasdsads',
     email : 'harsh@gmail.com',
     gender : 'Male',
-    country : 'America',
+    country : 'India',
     address : 'Ahemdabad',
     city : 'Ahemdabad',
     checkbox : true
@@ -31,7 +31,25 @@ export class UserService {
   deleteUserData() {
     return this.user;
   }
+  ngOnInit(){
+    //localStorage.setItem('token','http://localhost:4200/jobboard');
 
+  }
+
+  public saveData(key: string, value: string) {
+  //  localStorage.setItem(key, value);
+  }
+
+  public getData(key: string) {
+    return localStorage.getItem(key)
+  }
+  public removeData(key: string) {
+    localStorage.removeItem(key);
+  }
+
+  public clearData() {
+    localStorage.clear();
+  }
 
 
   //   private userList: user[] = [{

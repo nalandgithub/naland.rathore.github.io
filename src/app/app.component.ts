@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-export type EditorType = 'Dashboard' | 'User';
+export type EditorType = 'Dashboard' | 'User'|'Career';
 
 @Component({
   selector: 'app-root',

@@ -1,4 +1,5 @@
-<h2>User Registration form</h2>
+<div class="outer">
+  <h2>User Registration form</h2>
 
 <form [formGroup]="userForm" >
     <div class="form-group">
@@ -48,7 +49,7 @@
 </form>
 <pre>{{ userForm?.value | json }}</pre>
 
-
+</div>
 
 <!--' [(ngModel)]='userName'
 <label for="name">Name: </label>

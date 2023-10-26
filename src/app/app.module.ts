@@ -9,13 +9,20 @@ import { UserComponent } from './user/user.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { UserService } from './service/user.service';
 import {FormsModule} from '@angular/forms';
+import { CareerComponent } from './career/career.component';
+import { JobboardComponent } from './jobboard/jobboard.component';
+import { TestComponent } from './test/test.component';
+import { CookieService } from 'ngx-cookie-service';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
     UserComponent,
-    MainComponent
+    MainComponent,
+    CareerComponent,
+    JobboardComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +31,7 @@ import {FormsModule} from '@angular/forms';
     FormsModule 
     
   ],
-  providers: [UserService],
+  providers: [UserService,CookieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
