@@ -42,6 +42,7 @@ export class CareerComponent {
      email : obj.email,
      address : obj.address,
      city : obj.city
+     
    });
   }
   get (){
