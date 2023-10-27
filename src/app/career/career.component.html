@@ -1,3 +1,7 @@
+<div>
+<app-header></app-header>
+</div>
+
 <div class="outer">
     <h2>Job Application</h2>
   
@@ -21,8 +25,8 @@
           <input id="city" type="text" formControlName="city"   placeholder="Enter City">
       </div>
       <button type="submit"  (click)="onSubmit()">Submit</button>
-      <button (click)="removeItem()">Remove</button>
-      <button (click)="getAll()">ClearAll</button>
+      <!-- <button (click)="removeItem()">Remove</button>
+      <button (click)="getAll()">ClearAll</button> -->
       <button  (click)="editUserDetail()">Edit</button>
   </form>
   <!-- <script>
@@ -33,4 +37,8 @@
         alert(loc);
     }
 </script> -->
+  </div>
+
+  <div>
+    <app-footer></app-footer>
   </div>

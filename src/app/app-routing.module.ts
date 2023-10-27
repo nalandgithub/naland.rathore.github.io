@@ -7,6 +7,8 @@ import { MainComponent } from './main/main.component';
 import { JobboardComponent } from './jobboard/jobboard.component';
 import { CareerComponent } from './career/career.component';
 import { TestComponent } from './test/test.component';
+import { HeaderComponent } from './shared/components/header/header.component';
+import { FooterComponent } from './shared/components/footer/footer.component';
 
 const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
@@ -18,6 +20,10 @@ const routes: Routes = [
  
  { path: 'career', component: CareerComponent }, 
  { path: 'test', component: TestComponent },
+ 
+ { path: 'header', component: HeaderComponent },
+ 
+ { path: 'footer', component: FooterComponent },
 
 ];
 

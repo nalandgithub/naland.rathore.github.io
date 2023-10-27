@@ -13,6 +13,7 @@ import { CareerComponent } from './career/career.component';
 import { JobboardComponent } from './jobboard/jobboard.component';
 import { TestComponent } from './test/test.component';
 import { CookieService } from 'ngx-cookie-service';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { CookieService } from 'ngx-cookie-service';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    FormsModule 
+    FormsModule,
+    SharedModule
     
   ],
   providers: [UserService,CookieService],
