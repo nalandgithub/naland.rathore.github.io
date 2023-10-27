@@ -33,16 +33,15 @@ export class UserService {
   }
   ngOnInit(){
     //localStorage.setItem('token','http://localhost:4200/jobboard');
-
   }
 
   public saveData(key: string, value: string) {
   //  localStorage.setItem(key, value);
   }
 
-  public getData(key: string) {
-    return localStorage.getItem(key)
-  }
+  // public getData(key: string) {
+  //   return localStorage.getItem(key)
+  // }
   public removeData(key: string) {
     localStorage.removeItem(key);
   }
@@ -50,7 +49,6 @@ export class UserService {
   public clearData() {
     localStorage.clear();
   }
-
 
   //   private userList: user[] = [{
 //     id: 1,
