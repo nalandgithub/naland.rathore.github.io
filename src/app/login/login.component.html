@@ -1,0 +1,18 @@
+<app-header></app-header>
+<div class="outer">
+    <h2>User Login</h2>
+  
+  <form [formGroup]="loginForm" >
+   
+      <div class="form-group">
+          <label for="email">UserName: </label>
+          <input id="email" type="text" formControlName="email" placeholder=" Enter UserName">
+      </div><br>
+      <div class="form-group">
+          <label for="pwd">Password: </label>
+          <input id="pwd" type="password" formControlName="password" placeholder="Enter Password" >
+      </div>
+     
+      <button type="submit"  (click)="onLogin()">Login</button>
+  </form>
+<app-footer></app-footer>

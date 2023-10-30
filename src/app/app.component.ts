@@ -14,6 +14,7 @@ export class AppComponent {
   
   form: any;
   buttonType: any;
+  title: any;
 
 }
 

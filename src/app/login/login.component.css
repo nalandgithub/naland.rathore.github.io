@@ -1,0 +1,16 @@
+label {
+    font-weight: bold;
+    padding-bottom: .5rem;
+    padding-top: 1rem;
+    display: inline-block;
+    text-align: left;
+  }
+
+div {
+    text-align: center;
+  }
+  
+  /* .outer {
+    height: 100vh;
+    background-color: rgb(69, 104, 135);
+  } */

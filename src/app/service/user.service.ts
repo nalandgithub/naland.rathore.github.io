@@ -1,4 +1,6 @@
 import { Injectable } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
+import { Observable } from 'rxjs/internal/Observable';
 
 
 @Injectable({
@@ -18,6 +20,11 @@ export class UserService {
     city : 'Ahemdabad',
     checkbox : true
   }
+  token: string | undefined;
+  router: any;
+  //fakeUsername: string = "username";
+ // fakePassword: string = "password";
+  cartCount: any;
 
   addUserData(model: any) {
     throw new Error('Method not implemented.');
@@ -49,6 +56,39 @@ export class UserService {
   public clearData() {
     localStorage.clear();
   }
+ // isLoggedIn = new BehaviorSubject(false);
+
+  // loginUser() {
+  //   this.isLoggedIn.next(true);
+  // }
+  // logoutUser() {
+  //   this.isLoggedIn.next(false);
+  // }
+ 
+
+   //login(username: string, password: string): Observable<any> {
+ 
+  //   if (username == this.fakeUsername && password == this.fakePassword) {
+  //     localStorage.setItem("token", "my-super");
+  //     //return of(new HttpResponse({ status: 200 }));
+  //   } else {
+  //    // return of(new HttpResponse({ status: 401 }));
+  //   }
+  // }
+  loginUser(email: string,password: string) {
+    debugger;
+   // return this.http.setItem(email, password);
+    return this.http.get(email,password);
+   // return 'Login Successful';
+  }
+
+ 
+  // loginUser(){
+  //   return this.http.post(this.user);
+
+  // }
+
+
 
   //   private userList: user[] = [{
 //     id: 1,
@@ -103,3 +143,4 @@ export class UserService {
   //   { title: 'Ahemdabad' },
   // ];
 }
+

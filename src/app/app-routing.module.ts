@@ -9,6 +9,7 @@ import { CareerComponent } from './career/career.component';
 import { TestComponent } from './test/test.component';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
@@ -24,6 +25,8 @@ const routes: Routes = [
  { path: 'header', component: HeaderComponent },
  
  { path: 'footer', component: FooterComponent },
+ 
+ { path: 'login', component: LoginComponent },
 
 ];
 

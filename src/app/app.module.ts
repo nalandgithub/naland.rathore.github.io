@@ -14,6 +14,7 @@ import { JobboardComponent } from './jobboard/jobboard.component';
 import { TestComponent } from './test/test.component';
 import { CookieService } from 'ngx-cookie-service';
 import { SharedModule } from './shared/shared.module';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { SharedModule } from './shared/shared.module';
     MainComponent,
     CareerComponent,
     JobboardComponent,
-    TestComponent
+    TestComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
