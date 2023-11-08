@@ -29,6 +29,7 @@ export class CareerComponent {
     //this.userList = this.service.getUserData();
     console.log(this.userList);
     
+    
    localStorage.setItem('token',JSON.stringify(this.userForm.value));
   // localStorage.getItem('token');
      // sessionStorage.setItem('username','name');
